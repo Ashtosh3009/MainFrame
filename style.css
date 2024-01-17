@@ -1,11 +1,112 @@
-
-.Side-Panel{
-    border-radius: 2rem;
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-#submit{
-    margin-left: 2cm;
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
 }
-#Age{
-    margin-left: 6%;
+
+.column {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    flex: 1;
+}
+
+.column:nth-child(2) {
+    background-color: #ddd;
+}
+
+.question-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.expert-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.or-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.dash-line {
+    border-bottom: 1px solid #000;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.or-text {
+    font-weight: bold;
+}
+
+.icon {
+    width: 100px;
+    height: 70px;
+    border-radius: 50% 70% 70% 50%/70% 50% 50% 70%;
+    margin-bottom: 12px;
+}
+
+p.disclaimer {
+    font-size: 0.6em; /* Adjust the font size as needed */
+    margin-top: 5px; /* Adjust the margin as needed */
+    color: #666; /* Adjust the color as needed */
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns in a vertical layout on small screens */
+    }
+
+    .column {
+        flex: 1;
+        width: 100%; /* Full width for both columns on small screens */
+        margin-bottom: 20px; /* Add margin between columns for better spacing */
+    }
+
+    .column:nth-child(2) {
+        background-color: #ddd;
+    }
+
+    .icon {
+        width: 80px;
+        height: 56px;
+        margin-bottom: 10px;
+    }
 }
