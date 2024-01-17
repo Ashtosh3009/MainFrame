@@ -1,52 +1,48 @@
-<!-- New project -->
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <div class="Side-Panel">
-
-        <h3>Do You Want to Get Filtered ?</h3>
-        <form action="/action_page.php"></form>    
-        <label for="Age">Age : </label>
-            <input type="number" name="Age" id="Age" step="3" placeholder="Enter Your Age"/>
-        <br>
-
-        <label>Qualification : </label>
-        <input type="Qualification" name="Qualification" id="Age" placeholder="Enter Your Qualification"/>
-        &nbsp;
-        <br>
-
-        <label for="Field">Field : </label>
-        <input type="url" id="Age" name="Field" placeholder="Enter the field" required>
-
-        <br>
-        &nbsp; 
-        
-        <div>
-            <input type="submit" name ="submit" id="submit" value="submit">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Webpage Design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <img src="images/icon.png" alt="Icon" class="icon">
+            <h3>Welcome to iECHO</h3>
+            <p>Please choose an option to continue</p>
+            <button id="continueEmail" onclick="sortAndAlert()">
+                <i class="far fa-envelope"></i> Continue with Email
+            </button>
+            <p></p><!-- Empty paragraph for spacing -->
+            <button id="continueMobile" onclick="showMobileAlert()">
+                <i class="fas fa-mobile-alt"></i> Continue with Mobile
+            </button>
+            <div class="or-circle">
+                <span class="dash-line"></span>
+                <span class="or-text">OR</span>
+                <span class="dash-line"></span>
+            </div>
+            <button id="continueGoogle" disabled>
+                <i class="fab fa-google"></i> Continue with Google
+            </button>
+            <p>By continuing, you accept the Terms of Use and Privacy Policy</p>
+            <p class="disclaimer">
+                Disclaimer: This is an alpha test version of the iECHO website. The software is provided on an "as is" and "as available" basis. ECHO institute (UNM) or ECHO India do not give any warranties, whether express or implied, as to the suitability or usability of the website.
+            </p>
+        </div>
+        <div class="column">
+            <div class="question-circle">
+                <i class="fas fa-question"></i>
+            </div>
+            <img src="images\photo.png" alt="Photo" class="expert-photo">
+            <h3>Learn from Experts and Share your Expertise</h3>
+            <p>The ECHO model uses a hub-and-spoke knowledge-sharing approach</p>
         </div>
     </div>
 
-    <h1>
-        ABOUT US !!!
-    </h1>
-    <p>In this site, We introduce you to get into the WORLD OF SUCCESS. We saw that we can achieve a full knowledge of the exams that are currently happening. Main focus of the site is to spread awareness of the exams that do exist and we may (or may) not be eligible for such unawared sites.</p>
-
-    &nbsp;&nbsp;&nbsp;
-    
-    
-    <style>
-    h6{text-align:center;}
-    </style>
-    
-
-
-    <h6>
-        &nbsp;&nbsp;&nbsp;
-        for any quires you may mail at: <br>
-    <a href="harshgoyal54595@gmail.com">harshgoyal54595@gmail.com</a>
-    </h6>
-    
-    
-</head>
-
+    <script src="script.js"></script>
+</body>
 </html>
